@@ -3,6 +3,7 @@ package CLASS_JAVA.Class_7;
 import java.io.*;
 
 abstract public class Customer implements Cloneable,Serializable{
+
     private String ID;
     private String name;
     private String age;
