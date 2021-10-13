@@ -41,8 +41,8 @@ abstract public class Customer implements Cloneable,Serializable{
     }
 
     @Override
-    public Customer clone() throws CloneNotSupportedException {
-        Object obj=null;
+    public Customer clone() {
+        Object obj;
         try{
             obj=super.clone();
             return (Customer) obj;
