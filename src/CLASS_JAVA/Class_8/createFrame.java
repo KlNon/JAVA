@@ -14,7 +14,7 @@ public class createFrame extends JFrame implements ActionListener {
         super("主窗体");
         container.setLayout(new BorderLayout());
         JButton button = new JButton("单击创建一个内部窗体");
-        button.addActionListener(this);
+        button.addActionListener(this);//创建监听器
         container.add(button, BorderLayout.SOUTH);
         this.setSize(new Dimension(500, 500));
         this.setVisible(true);
@@ -23,7 +23,6 @@ public class createFrame extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        // System.out.println("come on");
         demo = Demo.create("子窗体", true, true, true, true);
         demo.setSize(new Dimension(300, 300));
         demo.setVisible(true);
