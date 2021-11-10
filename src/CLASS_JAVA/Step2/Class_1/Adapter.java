@@ -6,12 +6,13 @@ public class Adapter implements DataOperation {
     private static final QuickSort quickSort=new QuickSort();
 
     @Override
-    public void sort(int[] queue) {
+    public int[] sort(int[] queue) {
         try {
-            quickSort.quicksort(queue);
+            return quickSort.quicksort(queue);
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return queue;
     }
 
     @Override
