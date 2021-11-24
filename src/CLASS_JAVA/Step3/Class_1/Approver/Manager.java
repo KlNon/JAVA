@@ -10,7 +10,7 @@ public class Manager extends Approver{
     @Override
     public void processRequest(Note note) {
         if(note.getDay()<10){
-            System.out.println("经理"+this.name+"审批请假:"+note.getDay()+"日");
+            System.out.println("经理: "+this.name+" 审批请假:"+note.getDay()+"日");
         }
         else {
             this.successor.processRequest(note);

@@ -11,7 +11,7 @@ public class Director extends Approver{
     @Override
     public void processRequest(Note note) {
         if(note.getDay()<3){
-            System.out.println("主任"+this.name+"审批请假:"+note.getDay()+"日");
+            System.out.println("主任: "+this.name+" 审批请假:"+note.getDay()+"日");
         }
         else {
             this.successor.processRequest(note);

@@ -10,10 +10,10 @@ public class President extends Approver{
     @Override
     public void processRequest(Note note) {
         if(note.getDay()<30){
-            System.out.println("总经理"+this.name+"审批请假:"+note.getDay()+"日");
+            System.out.println("总经理: "+this.name+" 审批请假:"+note.getDay()+"日");
         }
         else {
-            this.successor.processRequest(note);
+            System.out.println("请假时间过长,总经理无法审批!");
         }
     }
 }

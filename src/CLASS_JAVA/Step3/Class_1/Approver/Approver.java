@@ -10,9 +10,11 @@ public abstract class Approver {
         this.name=name;
     }
 
+//    设置上司
     public void setSuccessor(Approver successor){
         this.successor=successor;
     }
 
+//    提交假条
     public abstract void processRequest(Note note);
 }
